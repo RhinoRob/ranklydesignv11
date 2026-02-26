@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RanklyDesign | Premium Web & Search Ecosystems</title>
-    <meta name="description" content="Westminster-based digital growth. High-performance websites, TikTok search optimization, and SEO revenue engines. Built by local experts.">
+    <title>RanklyDesign | Digital Ecosystems | Westminster, CO</title>
+    <meta name="description" content="Westminster-based digital growth. High-performance websites, Google/TripAdvisor ranking, and remote IT leadership.">
     <meta name="theme-color" content="#000000">
     
-    <!-- PERFORMANCE: Preconnect -->
+    <!-- PERFORMANCE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter Tight for that Apple look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter Tight for that premium Apple feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -25,23 +25,24 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'], // Apple-system stack
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
                         display: ['Inter', 'sans-serif'],
                     },
                     colors: {
                         brand: {
                             black: '#1d1d1f',   /* Apple Black */
-                            forest: '#1e3a2f',  /* Your Brand Green */
+                            forest: '#1e3a2f',  /* Rankly Green */
                             gray: '#f5f5f7',    /* Apple Light Gray */
                             accent: '#f59e0b',
                         }
                     },
                     boxShadow: {
-                        'soft': '0 4px 20px rgba(0, 0, 0, 0.04)',
-                        'glow': '0 0 40px rgba(30, 58, 47, 0.15)',
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.05)',
+                        'glow': '0 0 60px rgba(30, 58, 47, 0.2)',
                     },
                     borderRadius: {
                         '4xl': '2.5rem',
+                        '5xl': '3rem',
                     }
                 }
             }
@@ -54,54 +55,53 @@
             background-color: #ffffff;
             color: #1d1d1f;
         }
-        /* Apple-style smooth font rendering */
         * {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
         
         .hero-text-gradient {
-            background: linear-gradient(180deg, #1d1d1f 0%, #4a4a4a 100%);
+            background: linear-gradient(180deg, #1d1d1f 0%, #434344 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         section { scroll-margin-top: 100px; }
         
-        /* Custom Select Styling */
+        /* Modern Select Styling */
         select {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2386868b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
-            background-position: right 1rem center;
+            background-position: right 1.25rem center;
             background-repeat: no-repeat;
             background-size: 1.25em 1.25em;
-            padding-right: 2.5rem;
+            padding-right: 3rem;
             -webkit-appearance: none;
             appearance: none;
         }
     </style>
 </head>
-<body class="font-sans antialiased flex flex-col min-h-screen">
+<body class="font-sans antialiased flex flex-col min-h-screen selection:bg-brand-black selection:text-white">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-2xl border-b border-black/5 supports-[backdrop-filter]:bg-white/60">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-xl border-b border-black/5 supports-[backdrop-filter]:bg-white/60 transition-all duration-300">
+        <div class="max-w-[90rem] mx-auto px-6 lg:px-12">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
-                <a href="#" class="flex items-center gap-2 group">
-                    <div class="bg-black text-white w-8 h-8 rounded-lg flex items-center justify-center font-display font-black text-lg shadow-md group-hover:scale-105 transition-transform duration-300">
+                <a href="#" class="flex items-center gap-2.5 group">
+                    <div class="bg-black text-white w-9 h-9 rounded-xl flex items-center justify-center font-display font-bold text-lg shadow-lg group-hover:scale-105 transition-transform duration-500 ease-out">
                         R
                     </div>
                     <span class="font-display font-bold text-xl tracking-tight text-brand-black">RanklyDesign</span>
                 </a>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center gap-8">
-                    <div class="flex items-center gap-8 text-[13px] font-medium text-gray-600">
+                <div class="hidden md:flex items-center gap-10">
+                    <div class="flex items-center gap-8 text-[13px] font-medium text-gray-500">
                         <a href="#services" class="hover:text-black transition-colors">Services</a>
+                        <a href="#partner" class="hover:text-black transition-colors text-brand-forest">The Partner</a>
                         <a href="#about" class="hover:text-black transition-colors">Why Us</a>
-                        <a href="#contact" class="hover:text-black transition-colors">Contact</a>
                     </div>
-                    <a href="#contact" class="bg-black text-white text-[13px] px-5 py-2 rounded-full font-medium hover:bg-gray-800 transition-all transform hover:scale-[1.02]">
+                    <a href="#contact" class="bg-black text-white text-[13px] px-6 py-2.5 rounded-full font-medium hover:bg-gray-800 transition-all transform hover:scale-[1.02] shadow-sm">
                         Start Project
                     </a>
                 </div>
@@ -114,13 +114,13 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden bg-white/95 backdrop-blur-xl border-t border-black/5 absolute w-full h-screen shadow-2xl z-50">
-            <div class="px-6 py-8 space-y-4">
-                <a href="#services" class="mobile-link block text-2xl font-bold text-black py-2">Services</a>
-                <a href="#about" class="mobile-link block text-2xl font-bold text-black py-2">Why Us</a>
-                <a href="#contact" class="mobile-link block text-2xl font-bold text-black py-2">Contact</a>
+        <div id="mobile-menu" class="hidden bg-white/95 backdrop-blur-2xl border-t border-black/5 absolute w-full h-screen shadow-2xl z-50">
+            <div class="px-8 py-10 space-y-6">
+                <a href="#services" class="mobile-link block text-3xl font-bold text-black tracking-tight">Services</a>
+                <a href="#partner" class="mobile-link block text-3xl font-bold text-brand-forest tracking-tight">The Partner</a>
+                <a href="#contact" class="mobile-link block text-3xl font-bold text-black tracking-tight">Contact</a>
                 <div class="pt-8">
-                    <a href="#contact" class="mobile-link block w-full text-center bg-black text-white px-6 py-4 rounded-full font-bold text-lg">Start Project</a>
+                    <a href="#contact" class="mobile-link block w-full text-center bg-black text-white px-6 py-5 rounded-full font-bold text-lg">Start Project</a>
                 </div>
             </div>
         </div>
@@ -128,281 +128,318 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="relative pt-40 pb-24 lg:pt-52 lg:pb-40 overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gray border border-black/5 text-gray-500 text-[11px] font-semibold uppercase tracking-widest mb-8">
-                    <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-                    Serving Nationwide from Westminster, CO
+        <section class="relative pt-44 pb-32 lg:pt-60 lg:pb-48 overflow-hidden">
+            <div class="max-w-[90rem] mx-auto px-6 text-center relative z-10">
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-brand-gray border border-black/5 text-gray-500 text-[11px] font-bold uppercase tracking-[0.15em] mb-10 shadow-sm animate-fade-in-up">
+                    <span class="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
+                    Westminster, CO Based
                 </div>
                 
-                <h1 class="font-display text-6xl sm:text-7xl lg:text-8xl font-semibold tracking-tighter leading-[1] text-brand-black mb-8 hero-text-gradient">
-                    Stop Guessing. <br>Start Ranking.
+                <h1 class="font-display text-7xl sm:text-8xl lg:text-[7rem] font-semibold tracking-tighter leading-[0.95] text-brand-black mb-10 hero-text-gradient max-w-5xl mx-auto">
+                    Design. Rank.<br>Dominate.
                 </h1>
                 
-                <p class="text-xl md:text-2xl text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed font-normal">
-                    High-performance websites and revenue engines built by local experts. <span class="text-black">You own the code. You own the growth.</span>
+                <p class="text-xl md:text-2xl text-gray-500 mb-14 max-w-2xl mx-auto leading-relaxed font-normal">
+                    Premium digital ecosystems built on ownership. <br class="hidden md:block">No rental fees. No frustration. Just growth.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#services" class="w-full sm:w-auto px-8 py-4 bg-brand-forest text-white rounded-full font-medium text-lg hover:bg-black transition-all hover:scale-[1.02]">
-                        View Services
+                <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
+                    <a href="#services" class="w-full sm:w-auto px-10 py-4.5 bg-brand-forest text-white rounded-full font-medium text-[17px] hover:bg-black transition-all hover:scale-[1.02] shadow-lg shadow-brand-forest/20">
+                        View Ecosystems
                     </a>
-                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 text-brand-black font-medium text-lg hover:text-brand-forest transition-colors flex items-center gap-2">
-                        Free Strategy Call <i class="ph-bold ph-arrow-right text-sm"></i>
+                    <a href="#contact" class="w-full sm:w-auto px-10 py-4.5 text-brand-black font-medium text-[17px] hover:text-brand-forest transition-colors flex items-center gap-2 group">
+                        Free Strategy Call <i class="ph-bold ph-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
                     </a>
                 </div>
             </div>
-            
-            <!-- Subtle gradient fade at bottom -->
-            <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
         </section>
 
-        <!-- The "Why Us" Section (Bento Grid) -->
-        <section id="about" class="py-24 bg-white">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-brand-black mb-4">The Rankly Standard.</h2>
-                    <p class="text-gray-500 text-lg">Why smart business owners choose us over DIY.</p>
+        <!-- "Why Us" Grid -->
+        <section id="about" class="py-32 bg-white">
+            <div class="max-w-[85rem] mx-auto px-6">
+                <div class="text-center mb-24">
+                    <h2 class="text-4xl md:text-5xl font-semibold tracking-tighter text-brand-black mb-6">The Rankly Standard.</h2>
+                    <p class="text-gray-500 text-xl max-w-xl mx-auto">Why sophisticated business owners choose us over DIY.</p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-6">
+                <div class="grid md:grid-cols-3 gap-8">
                     <!-- Card 1 -->
-                    <div class="bg-brand-gray p-10 rounded-4xl hover:bg-[#eaeaea] transition-colors duration-500 group">
-                        <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-black mb-6 group-hover:scale-110 transition-transform">
+                    <div class="bg-brand-gray p-12 rounded-[2.5rem] hover:bg-[#efeff1] transition-all duration-500">
+                        <div class="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center text-black mb-8">
                             <i class="ph-fill ph-timer text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-xl text-black mb-2">Save 40+ Hours</h4>
-                        <p class="text-gray-500 leading-relaxed">Don't waste weekends fighting templates. We build it right the first time.</p>
+                        <h4 class="font-semibold text-2xl text-black mb-3">Save 40+ Hours</h4>
+                        <p class="text-gray-500 leading-relaxed font-medium">Don't waste weekends fighting templates. We build the architecture right the first time.</p>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-brand-gray p-10 rounded-4xl hover:bg-[#eaeaea] transition-colors duration-500 group md:-translate-y-4">
-                        <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-black mb-6 group-hover:scale-110 transition-transform">
+                    <div class="bg-brand-gray p-12 rounded-[2.5rem] hover:bg-[#efeff1] transition-all duration-500 md:-translate-y-8">
+                        <div class="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center text-black mb-8">
                             <i class="ph-fill ph-users-three text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-xl text-black mb-2">Local Experts</h4>
-                        <p class="text-gray-500 leading-relaxed">Based in <span class="text-black font-medium">Westminster</span>. Real strategy sessions with real people, not bots.</p>
+                        <h4 class="font-semibold text-2xl text-black mb-3">Local Experts</h4>
+                        <p class="text-gray-500 leading-relaxed font-medium">Based in <span class="text-black font-semibold">Westminster</span>. We can meet face-to-face for high-level strategy.</p>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-brand-gray p-10 rounded-4xl hover:bg-[#eaeaea] transition-colors duration-500 group">
-                        <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-black mb-6 group-hover:scale-110 transition-transform">
+                    <div class="bg-brand-gray p-12 rounded-[2.5rem] hover:bg-[#efeff1] transition-all duration-500">
+                        <div class="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center text-black mb-8">
                             <i class="ph-fill ph-lock-key-open text-2xl"></i>
                         </div>
-                        <h4 class="font-semibold text-xl text-black mb-2">100% Ownership</h4>
-                        <p class="text-gray-500 leading-relaxed">No hostage situations. We build the engine, hand you the keys, and you own the code.</p>
+                        <h4 class="font-semibold text-2xl text-black mb-3">100% Ownership</h4>
+                        <p class="text-gray-500 leading-relaxed font-medium">No hostage situations. We build the engine, hand you the keys, and you own the code.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SERVICES DETAILED BREAKDOWN -->
-        <section id="services" class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-6">
+        <!-- SERVICES -->
+        <section id="services" class="py-32 bg-white border-t border-gray-100">
+            <div class="max-w-[85rem] mx-auto px-6">
                 
                 <!-- 1. Web Design -->
-                <div class="mb-32">
-                    <div class="text-center mb-16">
-                        <span class="text-brand-forest font-semibold text-sm uppercase tracking-widest">Web Design</span>
-                        <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-brand-black mt-3">Edit-It-Yourself Websites.</h2>
-                        <p class="text-gray-500 mt-4 text-xl max-w-2xl mx-auto">Technical perfection. Simple management.</p>
+                <div class="mb-40">
+                    <div class="mb-20">
+                        <span class="text-brand-forest font-bold text-xs uppercase tracking-[0.2em]">Web Architecture</span>
+                        <h2 class="text-5xl md:text-6xl font-semibold tracking-tighter text-brand-black mt-4">Edit-It-Yourself.</h2>
                     </div>
 
-                    <div class="grid md:grid-cols-3 gap-6 items-start">
+                    <div class="grid lg:grid-cols-3 gap-8 items-start">
                         <!-- Starter -->
-                        <div class="p-10 rounded-4xl border border-gray-200 hover:border-gray-300 transition-colors duration-300 h-full flex flex-col">
+                        <div class="p-12 rounded-[2.5rem] border border-gray-100 bg-white hover:shadow-soft transition-all duration-500 h-full flex flex-col">
                             <h3 class="text-2xl font-semibold text-black">Launch</h3>
-                            <p class="text-4xl font-semibold text-black mt-4 mb-2">$500</p>
-                            <p class="text-gray-400 text-sm mb-8">One-time investment.</p>
-                            <ul class="space-y-4 mb-10 flex-grow text-[15px] text-gray-600 font-medium">
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> Simple 1-Page Layout</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> GitHub Hosting ($0/mo)</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> Optimized Setup</li>
+                            <p class="text-5xl font-semibold text-black mt-6 mb-2 tracking-tight">$500</p>
+                            <p class="text-gray-400 text-sm mb-10 font-medium">One-time investment.</p>
+                            <ul class="space-y-5 mb-12 flex-grow text-[15px] text-gray-600 font-medium">
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-black text-lg"></i> Simple 1-Page Layout</li>
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-black text-lg"></i> GitHub Hosting ($0/mo)</li>
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-black text-lg"></i> Technical SEO Setup</li>
                             </ul>
-                            <a href="#contact" class="block w-full py-3 bg-gray-100 text-black font-medium text-center rounded-full hover:bg-gray-200 transition">Get Started</a>
+                            <a href="#contact" class="block w-full py-4 bg-gray-100 text-black font-semibold text-center rounded-full hover:bg-gray-200 transition">Start Basic</a>
                         </div>
 
                         <!-- Growth -->
-                        <div class="p-10 rounded-4xl bg-brand-black text-white shadow-2xl relative transform md:-translate-y-4 h-full flex flex-col">
-                            <div class="absolute top-6 right-6 bg-white/10 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Popular</div>
+                        <div class="p-12 rounded-[2.5rem] bg-brand-black text-white shadow-2xl relative transform lg:-translate-y-6 h-full flex flex-col">
+                            <div class="absolute top-8 right-8 bg-white/10 backdrop-blur-md text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Popular</div>
                             <h3 class="text-2xl font-semibold">Growth</h3>
-                            <p class="text-4xl font-semibold mt-4 mb-2">$1,000</p>
-                            <p class="text-gray-400 text-sm mb-8">One-time investment.</p>
-                            <ul class="space-y-4 mb-8 flex-grow text-[15px] text-gray-300 font-medium">
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-white"></i> 5 Custom Pages</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-white"></i> 20 Products Uploaded</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-white"></i> Shopify or GitHub</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-white"></i> Edit Dashboard</li>
+                            <p class="text-5xl font-semibold mt-6 mb-2 tracking-tight">$1,000</p>
+                            <p class="text-gray-400 text-sm mb-10 font-medium">One-time investment.</p>
+                            <ul class="space-y-5 mb-10 flex-grow text-[15px] text-gray-300 font-medium">
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-white text-lg"></i> 5 Custom Pages</li>
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-white text-lg"></i> 20 Products Uploaded</li>
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-white text-lg"></i> Shopify or GitHub</li>
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-white text-lg"></i> Full CMS Access</li>
                             </ul>
-                            <p class="text-[11px] text-gray-500 mb-6 leading-tight">*Note: Shopify charges a $40/mo fee. You own the account.</p>
-                            <a href="#contact" class="block w-full py-3 bg-white text-black font-medium text-center rounded-full hover:bg-gray-100 transition">Select Growth</a>
+                            <p class="text-[11px] text-gray-500 mb-8 leading-tight opacity-60">*Shopify charges $40/mo. You own the account.</p>
+                            <a href="#contact" class="block w-full py-4 bg-white text-black font-semibold text-center rounded-full hover:bg-gray-100 transition">Select Growth</a>
                         </div>
 
                         <!-- Empire -->
-                        <div class="p-10 rounded-4xl border border-gray-200 hover:border-gray-300 transition-colors duration-300 h-full flex flex-col">
+                        <div class="p-12 rounded-[2.5rem] border border-gray-100 bg-white hover:shadow-soft transition-all duration-500 h-full flex flex-col">
                             <h3 class="text-2xl font-semibold text-black">Empire</h3>
-                            <p class="text-4xl font-semibold text-black mt-4 mb-2">$2,500</p>
-                            <p class="text-gray-400 text-sm mb-8">One-time investment.</p>
-                            <ul class="space-y-4 mb-10 flex-grow text-[15px] text-gray-600 font-medium">
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> 20 Pages Built For You</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> 50 Products Uploaded</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> Domination SEO</li>
+                            <p class="text-5xl font-semibold text-black mt-6 mb-2 tracking-tight">$2,500</p>
+                            <p class="text-gray-400 text-sm mb-10 font-medium">One-time investment.</p>
+                            <ul class="space-y-5 mb-12 flex-grow text-[15px] text-gray-600 font-medium">
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-black text-lg"></i> 20 Pages Built For You</li>
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-black text-lg"></i> 50 Products Uploaded</li>
+                                <li class="flex items-center gap-4"><i class="ph-fill ph-check-circle text-black text-lg"></i> Domination SEO</li>
                             </ul>
-                            <a href="#contact" class="block w-full py-3 bg-gray-100 text-black font-medium text-center rounded-full hover:bg-gray-200 transition">Contact Us</a>
+                            <a href="#contact" class="block w-full py-4 bg-gray-100 text-black font-semibold text-center rounded-full hover:bg-gray-200 transition">Build Empire</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. TikTok & Google (Bento Grid) -->
-                <div id="tiktok-growth" class="mb-32">
-                    <div class="text-center mb-16">
-                        <span class="text-brand-forest font-semibold text-sm uppercase tracking-widest">Search & Social</span>
-                        <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-brand-black mt-3">Be Found Everywhere.</h2>
+                <!-- 2. Search & Social (Bento Grid) -->
+                <div class="mb-40">
+                    <div class="mb-20">
+                        <span class="text-brand-forest font-bold text-xs uppercase tracking-[0.2em]">Search & Discovery</span>
+                        <h2 class="text-5xl md:text-6xl font-semibold tracking-tighter text-brand-black mt-4">Be Found Everywhere.</h2>
                     </div>
                     
-                    <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    <div class="grid lg:grid-cols-3 gap-8">
                         <!-- TikTok -->
-                        <div class="bg-brand-gray p-10 rounded-4xl group hover:bg-[#eaeaea] transition-colors duration-500">
-                            <div class="flex items-center gap-4 mb-6">
-                                <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center">
-                                    <i class="ph-fill ph-tiktok-logo text-xl"></i>
+                        <div class="bg-brand-gray p-10 rounded-[2.5rem] hover:bg-[#efeff1] transition-all duration-500">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center">
+                                    <i class="ph-fill ph-tiktok-logo text-2xl"></i>
                                 </div>
-                                <h3 class="text-2xl font-semibold text-black">TikTok Growth</h3>
+                                <h3 class="text-2xl font-semibold text-black">TikTok</h3>
                             </div>
-                            
                             <div class="space-y-8">
                                 <div>
-                                    <p class="text-lg font-semibold mb-1">Shop Setup <span class="text-gray-400 font-normal text-sm ml-2">$300 one-time</span></p>
-                                    <p class="text-sm text-gray-500">We handle the technical approval paperwork and sync your first 10 products.</p>
+                                    <p class="text-lg font-bold text-black mb-1">Shop Setup <span class="text-gray-400 font-normal text-sm ml-2">$300 one-time</span></p>
+                                    <p class="text-sm text-gray-500 font-medium">Technical approval & 10-product sync.</p>
                                 </div>
                                 <div>
-                                    <p class="text-lg font-semibold mb-1">Viral Plan <span class="text-gray-400 font-normal text-sm ml-2">$900 /mo</span></p>
-                                    <p class="text-sm text-gray-500">2 professionally edited videos per month + trend analysis.</p>
+                                    <p class="text-lg font-bold text-black mb-1">Viral Plan <span class="text-gray-400 font-normal text-sm ml-2">$900 /mo</span></p>
+                                    <p class="text-sm text-gray-500 font-medium">2 pro-edited videos/mo + trend analysis.</p>
                                 </div>
                             </div>
                             <a href="#contact" class="mt-8 inline-block text-black font-medium border-b border-black/20 hover:border-black transition-colors">Start TikTok Strategy</a>
                         </div>
 
                         <!-- Google -->
-                        <div class="bg-brand-gray p-10 rounded-4xl group hover:bg-[#eaeaea] transition-colors duration-500">
-                            <div class="flex items-center gap-4 mb-6">
-                                <div class="w-10 h-10 rounded-full bg-[#4285F4] text-white flex items-center justify-center">
-                                    <i class="ph-fill ph-google-logo text-xl"></i>
+                        <div class="bg-brand-gray p-10 rounded-[2.5rem] hover:bg-[#efeff1] transition-all duration-500">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-12 h-12 rounded-full bg-[#4285F4] text-white flex items-center justify-center">
+                                    <i class="ph-fill ph-google-logo text-2xl"></i>
                                 </div>
-                                <h3 class="text-2xl font-semibold text-black">Google & SEO</h3>
+                                <h3 class="text-2xl font-semibold text-black">Google</h3>
                             </div>
-                            
                             <div class="space-y-8">
                                 <div>
-                                    <p class="text-lg font-semibold mb-1">Map Pack <span class="text-gray-400 font-normal text-sm ml-2">$300 one-time</span></p>
-                                    <p class="text-sm text-gray-500">Verification and optimization for a single location. Get seen first locally.</p>
+                                    <p class="text-lg font-bold text-black mb-1">Map Pack <span class="text-gray-400 font-normal text-sm ml-2">$300 one-time</span></p>
+                                    <p class="text-sm text-gray-500 font-medium">Single location verification & optimization.</p>
                                 </div>
                                 <div>
-                                    <p class="text-lg font-semibold mb-1">Domination <span class="text-gray-400 font-normal text-sm ml-2">$800 one-time</span></p>
-                                    <p class="text-sm text-gray-500">Deep digital footprint cleanup to push you above competitors.</p>
+                                    <p class="text-lg font-bold text-black mb-1">Domination <span class="text-gray-400 font-normal text-sm ml-2">$800 one-time</span></p>
+                                    <p class="text-sm text-gray-500 font-medium">Deep footprint cleanup & citation blast.</p>
                                 </div>
                             </div>
                             <a href="#contact" class="mt-8 inline-block text-black font-medium border-b border-black/20 hover:border-black transition-colors">Improve My Ranking</a>
+                        </div>
+
+                        <!-- Reviews & Travel (TripAdvisor & Yelp) -->
+                        <div class="bg-brand-gray p-10 rounded-[2.5rem] hover:bg-[#efeff1] transition-all duration-500">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-12 h-12 rounded-full bg-brand-accent text-white flex items-center justify-center">
+                                    <i class="ph-fill ph-star text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold text-black">Reviews & Travel</h3>
+                            </div>
+                            <div class="space-y-8">
+                                <div>
+                                    <p class="text-lg font-bold text-black mb-1">Dual Setup <span class="text-gray-400 font-normal text-sm ml-2">$250 one-time</span></p>
+                                    <p class="text-sm text-gray-500 font-medium">TripAdvisor & Yelp. We get you listed and verified on both.</p>
+                                </div>
+                                <div>
+                                    <p class="text-lg font-bold text-black mb-1">Ranking Boost <span class="text-gray-400 font-normal text-sm ml-2">$350 /mo</span></p>
+                                    <p class="text-sm text-gray-500 font-medium">Strategies to get more 5-star reviews and climb the leaderboards.</p>
+                                </div>
+                            </div>
+                            <a href="#contact" class="mt-8 inline-block text-black font-medium border-b border-black/20 hover:border-black transition-colors">Boost Reputation</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- 3. Social Media Management -->
-                <div id="social-management">
-                    <div class="text-center mb-16">
-                        <span class="text-brand-forest font-semibold text-sm uppercase tracking-widest">Management</span>
-                        <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-brand-black mt-3">Social Media.</h2>
-                        <p class="text-gray-500 mt-4 text-xl max-w-2xl mx-auto">Consistent posting. Strategic growth. No burnout.</p>
+                <div class="mb-40">
+                    <div class="mb-20">
+                        <span class="text-brand-forest font-bold text-xs uppercase tracking-[0.2em]">Management</span>
+                        <h2 class="text-5xl md:text-6xl font-semibold tracking-tighter text-brand-black mt-4">Stay Consistent.</h2>
                     </div>
 
-                    <div class="grid md:grid-cols-3 gap-6 items-start">
-                        <!-- Basic -->
-                        <div class="p-10 rounded-4xl border border-gray-200 hover:border-gray-300 transition-colors duration-300 h-full flex flex-col">
-                            <h3 class="text-2xl font-semibold text-black">Essentials</h3>
-                            <p class="text-4xl font-semibold text-black mt-4 mb-2">$750<span class="text-lg font-normal text-gray-400">/mo</span></p>
-                            <ul class="space-y-4 mb-10 flex-grow text-[15px] text-gray-600 font-medium">
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> 1 Social Platform</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> 12 Posts / Month</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> 1 Strategy Call</li>
+                    <div class="grid lg:grid-cols-3 gap-8">
+                        <div class="p-10 rounded-[2.5rem] border border-gray-100 hover:border-gray-200 transition-all duration-300">
+                            <h3 class="text-xl font-bold text-black">Essentials</h3>
+                            <p class="text-4xl font-semibold text-black mt-4 mb-1">$750<span class="text-lg font-normal text-gray-400">/mo</span></p>
+                            <div class="h-px bg-gray-100 my-8"></div>
+                            <ul class="space-y-4 text-sm font-medium text-gray-600">
+                                <li>1 Social Platform</li>
+                                <li>12 Posts / Month</li>
+                                <li>1 Strategy Call</li>
                             </ul>
-                            <a href="#contact" class="block w-full py-3 bg-gray-100 text-black font-medium text-center rounded-full hover:bg-gray-200 transition">Start Basic</a>
                         </div>
-
-                        <!-- Pro -->
-                        <div class="p-10 rounded-4xl bg-brand-black text-white shadow-2xl relative transform md:-translate-y-4 h-full flex flex-col">
-                            <h3 class="text-2xl font-semibold">Professional</h3>
-                            <p class="text-4xl font-semibold mt-4 mb-2">$1,500<span class="text-lg font-normal text-gray-400">/mo</span></p>
-                            <ul class="space-y-4 mb-8 flex-grow text-[15px] text-gray-300 font-medium">
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-white"></i> 2 Social Platforms</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-white"></i> 20 Posts / Month</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-white"></i> 2 Strategy Calls</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-white"></i> Community Mgmt</li>
+                        <div class="p-10 rounded-[2.5rem] bg-brand-black text-white shadow-xl relative lg:-translate-y-4">
+                            <h3 class="text-xl font-bold text-white">Professional</h3>
+                            <p class="text-4xl font-semibold text-white mt-4 mb-1">$1,500<span class="text-lg font-normal text-gray-400">/mo</span></p>
+                            <div class="h-px bg-white/10 my-8"></div>
+                            <ul class="space-y-4 text-sm font-medium text-gray-300">
+                                <li>2 Social Platforms</li>
+                                <li>20 Posts / Month</li>
+                                <li>Community Management</li>
                             </ul>
-                            <a href="#contact" class="block w-full py-3 bg-white text-black font-medium text-center rounded-full hover:bg-gray-100 transition">Select Pro</a>
                         </div>
-
-                        <!-- Elite -->
-                        <div class="p-10 rounded-4xl border border-gray-200 hover:border-gray-300 transition-colors duration-300 h-full flex flex-col">
-                            <h3 class="text-2xl font-semibold text-black">Elite</h3>
-                            <p class="text-4xl font-semibold text-black mt-4 mb-2">$2,500<span class="text-lg font-normal text-gray-400">/mo</span></p>
-                            <ul class="space-y-4 mb-10 flex-grow text-[15px] text-gray-600 font-medium">
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> 3 Social Platforms</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> 30 Posts (Daily)</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> 4 Strategy Calls</li>
-                                <li class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-black"></i> Advanced Analytics</li>
+                        <div class="p-10 rounded-[2.5rem] border border-gray-100 hover:border-gray-200 transition-all duration-300">
+                            <h3 class="text-xl font-bold text-black">Elite</h3>
+                            <p class="text-4xl font-semibold text-black mt-4 mb-1">$2,500<span class="text-lg font-normal text-gray-400">/mo</span></p>
+                            <div class="h-px bg-gray-100 my-8"></div>
+                            <ul class="space-y-4 text-sm font-medium text-gray-600">
+                                <li>3 Social Platforms</li>
+                                <li>Daily Posting (30/mo)</li>
+                                <li>Advanced Analytics</li>
                             </ul>
-                            <a href="#contact" class="block w-full py-3 bg-gray-100 text-black font-medium text-center rounded-full hover:bg-gray-200 transition">Go Elite</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- 4. The High-End Partner Model -->
+                <div id="partner" class="bg-brand-black rounded-[3rem] p-12 lg:p-20 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-[40rem] h-[40rem] bg-brand-forest/30 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+                    
+                    <div class="relative z-10 max-w-4xl">
+                        <span class="inline-block px-4 py-1.5 rounded-full border border-white/20 text-white/80 text-[11px] font-bold uppercase tracking-widest mb-8">
+                            Outsourced Leadership
+                        </span>
+                        <h2 class="text-5xl lg:text-7xl font-semibold tracking-tighter mb-8">The Virtual CTO.</h2>
+                        <p class="text-xl lg:text-2xl text-gray-400 font-normal leading-relaxed mb-12 max-w-2xl">
+                            For businesses that need more than a service provider. We become your technical arm. Complete ecosystem management, remote IT specialist support, and priority execution.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-x-12 gap-y-6 text-sm font-bold text-white/90 mb-12">
+                            <span class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-brand-forest"></i> Full Web & Social Mgmt</span>
+                            <span class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-brand-forest"></i> Remote IT Specialist</span>
+                            <span class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-brand-forest"></i> System Integrations</span>
+                            <span class="flex items-center gap-3"><i class="ph-fill ph-check-circle text-brand-forest"></i> 24/7 Priority Lane</span>
+                        </div>
+
+                        <div class="flex items-end gap-6">
+                            <p class="text-6xl font-semibold tracking-tight">$5,000<span class="text-xl font-normal text-gray-500">/mo</span></p>
+                            <a href="#contact" class="px-10 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-all mb-2">Apply for Partnership</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- THE FINAL CLOSER -->
+        <!-- THE CLOSER -->
         <section id="contact" class="py-32 bg-white relative overflow-hidden">
             <div class="max-w-3xl mx-auto px-6 relative z-10 text-center">
-                <h2 class="text-5xl md:text-6xl font-semibold tracking-tighter text-black mb-6">Ready to Dominate?</h2>
-                <p class="text-xl text-gray-500 mb-12 font-normal">
-                    Fill this out. Our team will review your business and design a custom roadmap.
+                <h2 class="text-5xl md:text-6xl font-semibold tracking-tighter text-black mb-6">Let's Build It.</h2>
+                <p class="text-xl text-gray-500 mb-16 font-normal">
+                    Select your ecosystem below. We'll handle the rest.
                 </p>
                 
-                <div class="bg-brand-gray p-8 md:p-12 rounded-[2.5rem]">
-                    <!-- FormSubmit Configuration -->
-                    <form id="contact-form" action="https://formsubmit.co/robertserranomailbox@gmail.com" method="POST" class="space-y-6 text-left">
-                        <input type="hidden" name="_subject" value="New RanklyDesign Lead">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://ranklydesign.com/#contact">
-
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="space-y-2">
+                <div class="bg-brand-gray p-10 md:p-14 rounded-[3rem] text-left">
+                    <!-- Switched to Formspree for absolute reliability without reactivation loops -->
+                    <form id="contact-form" action="https://formspree.io/f/mwvnyvyv" method="POST" class="space-y-8">
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-3">
                                 <label class="text-[11px] font-bold uppercase tracking-widest text-gray-400 ml-4">Email</label>
-                                <input type="email" required name="email" class="w-full px-6 py-4 bg-white rounded-2xl border-none focus:ring-2 focus:ring-black/5 transition-all text-lg placeholder:text-gray-300" placeholder="you@company.com">
+                                <input type="email" required name="email" class="w-full px-8 py-5 bg-white rounded-3xl border-none focus:ring-2 focus:ring-black/5 transition-all text-lg placeholder:text-gray-300" placeholder="you@company.com">
                             </div>
-                            <div class="space-y-2">
+                            <div class="space-y-3">
                                 <label class="text-[11px] font-bold uppercase tracking-widest text-gray-400 ml-4">Website <span class="lowercase font-normal opacity-50">(optional)</span></label>
-                                <input type="text" name="url" class="w-full px-6 py-4 bg-white rounded-2xl border-none focus:ring-2 focus:ring-black/5 transition-all text-lg placeholder:text-gray-300" placeholder="yourbusiness.com">
+                                <input type="text" name="url" class="w-full px-8 py-5 bg-white rounded-3xl border-none focus:ring-2 focus:ring-black/5 transition-all text-lg placeholder:text-gray-300" placeholder="yourbusiness.com">
                             </div>
                         </div>
                         
-                        <div class="space-y-2">
-                            <label class="text-[11px] font-bold uppercase tracking-widest text-gray-400 ml-4">Interest</label>
+                        <div class="space-y-3">
+                            <label class="text-[11px] font-bold uppercase tracking-widest text-gray-400 ml-4">Select Ecosystem</label>
                             <div class="relative">
-                                <select name="package" class="w-full px-6 py-4 bg-white rounded-2xl border-none focus:ring-2 focus:ring-black/5 transition-all text-lg cursor-pointer text-black">
-                                    <optgroup label="Web Design">
-                                        <option value="Web: Launch ($500)">Launch Build ($500)</option>
-                                        <option value="Web: Growth ($1,000)">Growth CMS ($1,000)</option>
-                                        <option value="Web: Empire ($2,500)">Empire Build ($2,500)</option>
+                                <select name="package" class="w-full px-8 py-5 bg-white rounded-3xl border-none focus:ring-2 focus:ring-black/5 transition-all text-lg cursor-pointer text-black">
+                                    <optgroup label="Website Design">
+                                        <option value="Web: Launch ($500)">Web: Launch ($500)</option>
+                                        <option value="Web: Growth ($1,000)">Web: Growth ($1,000)</option>
+                                        <option value="Web: Empire ($2,500)">Web: Empire ($2,500)</option>
                                     </optgroup>
                                     <optgroup label="Social Media Management">
-                                        <option value="Social: Essentials ($750/mo)">Social: Essentials (12 Posts/Mo)</option>
-                                        <option value="Social: Pro ($1,500/mo)">Social: Professional (20 Posts/Mo)</option>
-                                        <option value="Social: Elite ($2,500/mo)">Social: Elite (Daily Posts)</option>
+                                        <option value="Social: Essentials ($750/mo)">Social: Essentials ($750/mo)</option>
+                                        <option value="Social: Pro ($1,500/mo)">Social: Professional ($1,500/mo)</option>
+                                        <option value="Social: Elite ($2,500/mo)">Social: Elite ($2,500/mo)</option>
                                     </optgroup>
-                                    <optgroup label="Search & Social">
-                                        <option value="TikTok: Shop Setup ($300)">TikTok Shop Setup ($300)</option>
-                                        <option value="TikTok: Viral Plan ($900/mo)">TikTok Viral Plan ($900/mo)</option>
-                                        <option value="Google: Map Pack ($300)">Google Map Pack ($300)</option>
-                                        <option value="Google: Domination ($800)">Google Domination ($800)</option>
+                                    <optgroup label="Search & Discovery">
+                                        <option value="TikTok: Shop Setup ($300)">TikTok: Shop Setup ($300)</option>
+                                        <option value="TikTok: Viral Plan ($900/mo)">TikTok: Viral Plan ($900/mo)</option>
+                                        <option value="Google: Map Pack ($300)">Google: Map Pack ($300)</option>
+                                        <option value="Google: Domination ($800)">Google: Domination ($800)</option>
+                                        <option value="Reviews: Dual Setup ($250)">TripAdvisor & Yelp Setup ($250)</option>
+                                        <option value="Reviews: Ranking Boost ($350/mo)">Review Ranking Boost ($350/mo)</option>
+                                    </optgroup>
+                                    <optgroup label="High-End Partnership">
+                                        <option value="Partner: Virtual CTO ($5,000/mo)">Partner: Virtual CTO ($5,000/mo)</option>
                                     </optgroup>
                                     <optgroup label="Other">
                                         <option value="Audit: Strategy ($150)">Strategy Audit ($150)</option>
@@ -412,13 +449,13 @@
                             </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <label class="text-[11px] font-bold uppercase tracking-widest text-gray-400 ml-4">Goals</label>
-                            <textarea name="message" required rows="4" class="w-full px-6 py-4 bg-white rounded-2xl border-none focus:ring-2 focus:ring-black/5 transition-all text-lg placeholder:text-gray-300 resize-none" placeholder="Tell us about your project..."></textarea>
+                        <div class="space-y-3">
+                            <label class="text-[11px] font-bold uppercase tracking-widest text-gray-400 ml-4">Project Goals</label>
+                            <textarea name="message" required rows="4" class="w-full px-8 py-5 bg-white rounded-3xl border-none focus:ring-2 focus:ring-black/5 transition-all text-lg placeholder:text-gray-300 resize-none" placeholder="What are we building?"></textarea>
                         </div>
 
-                        <button type="submit" class="w-full py-5 bg-black text-white font-medium text-xl rounded-full hover:bg-gray-800 transition-all transform hover:scale-[1.01] shadow-lg">
-                            Send Request
+                        <button type="submit" class="w-full py-6 bg-brand-forest text-white font-bold text-xl rounded-full hover:bg-black transition-all transform hover:scale-[1.01] shadow-lg shadow-brand-forest/20 flex justify-center items-center gap-2">
+                            <span>Send Request</span>
                         </button>
                     </form>
                 </div>
@@ -428,19 +465,18 @@
 
     <!-- Footer -->
     <footer class="bg-white py-12 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400 text-sm font-medium">
             <div class="flex items-center gap-2">
                 <span class="font-bold text-black">RanklyDesign</span>
                 <span class="w-1 h-1 rounded-full bg-gray-300"></span>
                 <span>Westminster, CO</span>
             </div>
-            <p>&copy; 2024 RanklyDesign. All Rights Reserved.</p>
+            <p>&copy; 2026 RanklyDesign. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script>
-        // Mobile Menu
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -455,20 +491,58 @@
             });
         });
 
-        // Toast logic for visual feedback (since FormSubmit handles the actual logic)
+        // Robust, background form submission using Formspree
         const form = document.getElementById('contact-form');
         const toast = document.getElementById('toast');
 
-        // Note: FormSubmit redirects by default. We use this listener just to show
-        // immediate feedback if the user stays on page or uses back button.
-        form.addEventListener('submit', () => {
-            // Optional: You could show a spinner here
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const btn = form.querySelector('button');
+            const btnText = btn.querySelector('span');
+            const originalText = btnText.innerText;
+            
+            // Loading State
+            btnText.innerHTML = '<i class="ph ph-circle-notch animate-spin text-2xl"></i> Processing...';
+            btn.disabled = true;
+            btn.classList.add('opacity-80', 'cursor-not-allowed');
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success State
+                    toast.classList.remove('translate-y-20', 'opacity-0');
+                    btnText.innerText = 'Sent Successfully!';
+                    btn.classList.replace('bg-brand-forest', 'bg-black');
+                    form.reset();
+                    
+                    setTimeout(() => {
+                        toast.classList.add('translate-y-20', 'opacity-0');
+                        btnText.innerText = originalText;
+                        btn.disabled = false;
+                        btn.classList.remove('opacity-80', 'cursor-not-allowed');
+                        btn.classList.replace('bg-black', 'bg-brand-forest');
+                    }, 5000);
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            } catch (error) {
+                // Error State
+                btnText.innerText = 'Error. Please Try Again.';
+                setTimeout(() => {
+                    btnText.innerText = originalText;
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-80', 'cursor-not-allowed');
+                }, 3000);
+            }
         });
-        
-        // Check URL for success param from FormSubmit redirect
-        if (window.location.href.includes('contact')) {
-             // Logic can be added here if you disable _next redirect
-        }
     </script>
 </body>
 </html>
